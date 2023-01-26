@@ -12,22 +12,30 @@ function draw() {
     let test = sprites.create(picture);
 }
 
-
-function noise() {
-    for (let i = 0; i < 160; i++) {
-        for (let j = 0; j < 120; j++) {
-            picture.setPixel(i, j, randint(0, 16));
-        }
-    }
-}
-noise();
 picture.fillRect(0, 0, 100, 100, 2)
 picture.setPixel(50, 50, 1)
 picture.drawCircle(50, 50, 10, 5)
+
 
 draw();
 controller.A.onEvent(ControllerButtonEvent.Pressed, () => { clear(); })
 controller.B.onEvent(ControllerButtonEvent.Pressed, () => {
     picture.fillRect(0, 0, 100, 100, 2);
 })
+
+controller.up.onEvent(ControllerButtonEvent.Pressed, () => {
+    picture.drawRect(randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 16));
+});
+
+controller.down.onEvent(ControllerButtonEvent.Pressed, () => {
+    picture.drawCircle(randint(0, screen.width), randint(0, screen.height), randint(0, 50), randint(0, 16));
+});
+
+controller.left.onEvent(ControllerButtonEvent.Pressed, () => {
+    picture.drawLine(randint(0, screen.width), randint(0, screen.height), randint(0, screen.width), randint(0, screen.height), randint(0, 16));
+});
+
+controller.right.onEvent(ControllerButtonEvent.Pressed, () => {
+    picture.setPixel(randint(0, screen.width), randint(0, screen.height), randint(0, 16));
+});
 
