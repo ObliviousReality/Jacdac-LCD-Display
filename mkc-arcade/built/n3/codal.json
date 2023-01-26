@@ -1,0 +1,39 @@
+{
+  "target": {
+    "branches": {},
+    "name": "codal-nrf52833-dk",
+    "url": "https://github.com/mmoskal/codal-nrf52833-dk",
+    "branch": "v2.0.2",
+    "type": "git"
+  },
+  "definitions": {
+    "PXT_GC_CHECKS": 0,
+    "DEVICE_JACDAC_DEBUG": 1,
+    "PXT_BOARD_ID": "BOARD_ID_NRF52833",
+    "PXT_SUPPORT_LIS3DH": 1,
+    "PXT_SUPPORT_MMA8453": 1,
+    "PXT_SUPPORT_MPU6050": 1,
+    "DEVICE_COMPONENT_COUNT": 64,
+    "DEVICE_DMESG_BUFFER_SIZE": 1024,
+    "DEVICE_USB": 0,
+    "DEVICE_WEBUSB": 0,
+    "PXT_TARGET": "\"arcade\""
+  },
+  "config": {
+    "PXT_GC_CHECKS": 0,
+    "DEVICE_JACDAC_DEBUG": 1,
+    "PXT_BOARD_ID": "BOARD_ID_NRF52833",
+    "PXT_SUPPORT_LIS3DH": 1,
+    "PXT_SUPPORT_MMA8453": 1,
+    "PXT_SUPPORT_MPU6050": 1,
+    "DEVICE_COMPONENT_COUNT": 64,
+    "DEVICE_DMESG_BUFFER_SIZE": 1024,
+    "DEVICE_USB": 0,
+    "DEVICE_WEBUSB": 0,
+    "PXT_TARGET": "\"arcade\""
+  },
+  "application": "pxtapp",
+  "output_folder": "build",
+  "pxt_gitrepo": "lancaster-university/codal",
+  "pxt_gittag": "v0.8.0"
+}
