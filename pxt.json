@@ -2,7 +2,7 @@
     "name": "my-project",
     "version": "0.0.0",
     "files": [
-        "main.ts"
+        "src/drawCommands.ts"
     ],
     "supportedTargets": [
         "arcade"
