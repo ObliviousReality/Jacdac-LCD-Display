@@ -13,8 +13,8 @@
     ],
     "public": true,
     "targetVersions": {
-        "target": "1.12.13",
-        "pxt": "8.5.18"
+        "target": "1.12.18",
+        "pxt": "8.5.25"
     },
     "skipLocalization": true
 }

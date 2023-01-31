@@ -1,0 +1,26 @@
+{
+    "name": "serial",
+    "description": "UART communication",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "serial-target.h",
+        "serial-common.h",
+        "serial-target.cpp",
+        "serial-common.cpp",
+        "serial-target.ts",
+        "serial.ts",
+        "enums.d.ts",
+        "shims.d.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "1.12.18",
+        "pxt": "8.5.25"
+    },
+    "hidden": true
+}

@@ -2,13 +2,15 @@
     "name": "my-project",
     "version": "0.0.0",
     "files": [
-        "src/drawCommands.ts"
+        "src/SerialComms.ts"
     ],
     "supportedTargets": [
         "arcade"
     ],
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "serial": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "testDependencies": {}
 }
