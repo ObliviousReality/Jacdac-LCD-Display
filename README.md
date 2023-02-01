@@ -8,13 +8,13 @@
 
 To install MKC:
 
-`npm install -g makecode`
+`npm init -g makecode`
 
 ## Setup
 
 In an empty folder, run
 
-`mkc install arcade`
+`mkc init arcade`
 
 There are other template options, notably `microbit` for standard Microbit programming, or `maker-jacdac-brain-rp2040` for the Jacdac RP2040 module. A full list of templates can be generated with the command `mkc help init`.
 
