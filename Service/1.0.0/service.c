@@ -10,24 +10,14 @@
 #define JD_LCD_REG_BRIGHTNESS JD_REG_INTENSITY
 
 /**
- * Read-only ratio u0.8 (uint8_t). Actual brightness of the display; varies from `brightness` if limited by the power.
+ * Read-only # uint16_t. Width of the display, in pixels.
  */
-#define JD_LCD_REG_ACTUAL_BRIGHTNESS 0x180
+#define JD_LCD_REG_WIDTH 0x180
 
 /**
- * Read-write # uint16_t. Width of the display, in pixels.
+ * Read-only # uint16_t. Height of the display, in pixels.
  */
-#define JD_LCD_REG_WIDTH 0x80
-
-/**
- * Read-write # uint16_t. Width of the display, in pixels.
- */
-#define JD_LCD_REG_HEIGHT 0x81
-
-/**
- * Read-write mA uint16_t. Limits the power drawn by the display.
- */
-#define JD_LCD_REG_MAX_POWER JD_REG_MAX_POWER
+#define JD_LCD_REG_HEIGHT 0x181
 
 /**
  * Argument: command bytes. Runs the specified command.

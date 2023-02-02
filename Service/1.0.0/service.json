@@ -2,8 +2,8 @@
   "name": "LCD",
   "status": "experimental",
   "shortId": "",
-  "camelName": "LCD",
-  "shortName": "LCD",
+  "camelName": "lcd",
+  "shortName": "lcd",
   "extends": [
     "_base"
   ],
@@ -122,24 +122,8 @@
     },
     {
       "kind": "ro",
-      "name": "actual_brightness",
-      "identifier": 384,
-      "description": "Actual brightness of the display; varies from `brightness` if limited by the power.",
-      "fields": [
-        {
-          "name": "_",
-          "unit": "/",
-          "shift": 8,
-          "type": "u0.8",
-          "storage": 1
-        }
-      ],
-      "packFormat": "u0.8"
-    },
-    {
-      "kind": "rw",
       "name": "width",
-      "identifier": 128,
+      "identifier": 384,
       "description": "Width of the display, in pixels.",
       "fields": [
         {
@@ -153,10 +137,10 @@
       "packFormat": "u16"
     },
     {
-      "kind": "rw",
+      "kind": "ro",
       "name": "height",
-      "identifier": 129,
-      "description": "Width of the display, in pixels.",
+      "identifier": 385,
+      "description": "Height of the display, in pixels.",
       "fields": [
         {
           "name": "_",
@@ -166,24 +150,6 @@
           "isSimpleType": true
         }
       ],
-      "packFormat": "u16"
-    },
-    {
-      "kind": "rw",
-      "name": "max_power",
-      "identifier": 7,
-      "description": "Limits the power drawn by the display.",
-      "fields": [
-        {
-          "name": "_",
-          "unit": "mA",
-          "type": "u16",
-          "storage": 2,
-          "isSimpleType": true,
-          "defaultValue": 200
-        }
-      ],
-      "identifierName": "max_power",
       "packFormat": "u16"
     },
     {

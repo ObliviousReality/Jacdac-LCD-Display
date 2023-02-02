@@ -1,7 +1,7 @@
 # LCD
 
     identifier: 0x1b7567b4
-    camel: LCD
+    camel: lcd
     tags: C
 
 Controller for a variable-size Liquid Crystal Display
@@ -12,21 +12,13 @@ Controller for a variable-size Liquid Crystal Display
 
 Sets the brightness of the display.
 
-    ro actual_brightness: u0.8 / @ 0x180
-
-Actual brightness of the display; varies from `brightness` if limited by the power.
-
-    rw width: u16 # @ 0x80
+    ro width: u16 # @ 0x180
 
 Width of the display, in pixels.
 
-    rw height: u16 # @ 0x81
+    ro height: u16 # @ 0x181
 
-Width of the display, in pixels.
-
-    rw max_power = 200: u16 mA @ max_power
-
-Limits the power drawn by the display.
+Height of the display, in pixels.
 
 ## Commands
 
